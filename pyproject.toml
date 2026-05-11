@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "mcp-real-estate-analytics"
+version = "0.1.0"
+description = "MCP server exposing real estate analytics tools to AI agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Júlio Medeiros"}]
+dependencies = [
+    "mcp>=1.0.0",
+]
+
+[project.scripts]
+mcp-real-estate = "mcp_real_estate.__main__:main"
